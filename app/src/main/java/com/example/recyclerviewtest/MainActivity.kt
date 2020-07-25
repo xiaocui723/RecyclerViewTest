@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         initFruits()
         val layoutManager = LinearLayoutManager(this)
+        layoutManager.orientation = LinearLayoutManager.HORIZONTAL
         recyclerView.layoutManager = layoutManager
         val adapter = FruitAdapter(fruitList)
         recyclerView.adapter = adapter
